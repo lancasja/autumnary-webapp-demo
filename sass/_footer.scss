@@ -1,0 +1,9 @@
+.footer {
+	display: none;
+	background: $bg-color-dark;
+	height: 10%;
+	@include side-padding;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}

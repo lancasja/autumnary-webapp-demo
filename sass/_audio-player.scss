@@ -1,0 +1,19 @@
+.audio-player {
+	a {
+		border: 1px solid rgba(70, 70, 70, 0.8);
+		padding: 4px 8px;
+		cursor: pointer;
+		border-radius: 4px;
+		text-align: center;
+		transition: all 0.3s ease;
+
+		-moz-user-select: none;
+	  -webkit-user-select: none;
+	  -ms-user-select: none;
+
+	  &:hover {
+			color: #489413;
+			border-color: #489413;
+		}
+	}
+}

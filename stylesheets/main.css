@@ -1,0 +1,479 @@
+/* line 1, ../sass/_base.scss */
+html, body, #wrapper {
+  height: 100%;
+}
+
+/* line 5, ../sass/_base.scss */
+body {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+/* line 11, ../sass/_base.scss */
+#wrapper {
+  min-width: 768px;
+}
+
+/* line 15, ../sass/_base.scss */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 21, ../sass/_base.scss */
+a, a:hover {
+  text-decoration: none;
+}
+
+/* line 28, ../sass/_base.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 32, ../sass/_base.scss */
+.section-title {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 18px 80px;
+  margin: 0 -15px 0 -15px;
+  font-size: 150%;
+  background: #000;
+  color: #fff;
+  position: relative;
+}
+/* line 42, ../sass/_base.scss */
+.section-title h3 {
+  margin: 0;
+}
+
+/* line 1, ../sass/_header.scss */
+.header-bg {
+  background: url(../img/ds_logo.svg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 0 20px 30px 20px;
+  height: 360px;
+  overflow: hidden;
+}
+/* line 9, ../sass/_header.scss */
+.header-bg img {
+  display: block;
+  margin: 0 auto;
+  height: 360px;
+}
+
+/* line 16, ../sass/_header.scss */
+.heading {
+  background: black;
+  display: inline-block;
+  position: absolute;
+  top: 80px;
+  padding: 20px 80px 20px 80px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+/* line 29, ../sass/_header.scss */
+.heading h2 {
+  color: #fff;
+  margin: 0;
+}
+/* line 34, ../sass/_header.scss */
+.heading p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 2, ../sass/_main-sfx.scss */
+.sfx .category {
+  height: 100%;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+/* line 7, ../sass/_main-sfx.scss */
+.sfx .category:hover {
+  filter: grayscale(0);
+}
+/* line 11, ../sass/_main-sfx.scss */
+.sfx .category:nth-child(1) {
+  background: url(../img/coins.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+/* line 17, ../sass/_main-sfx.scss */
+.sfx .category:nth-child(2) {
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  background: url(../img/jump.jpg) no-repeat;
+  background-size: cover;
+}
+/* line 26, ../sass/_main-sfx.scss */
+.sfx .category:nth-child(3) {
+  background: url(../img/shoot.jpg) no-repeat;
+  background-size: cover;
+  background-position: 30%;
+}
+/* line 32, ../sass/_main-sfx.scss */
+.sfx .category .title-container {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  width: 70px;
+  position: absolute;
+  right: 0;
+}
+/* line 39, ../sass/_main-sfx.scss */
+.sfx .category .title-container .bg-title {
+  display: block;
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  right: -170px;
+  top: 45%;
+  width: 400px;
+  font-size: 300%;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+/* line 2, ../sass/_main-music.scss */
+.music .category {
+  height: 100%;
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+/* line 7, ../sass/_main-music.scss */
+.music .category:hover {
+  filter: grayscale(0);
+}
+/* line 11, ../sass/_main-music.scss */
+.music .category:nth-child(1) {
+  background: url(../img/action.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+/* line 17, ../sass/_main-music.scss */
+.music .category:nth-child(2) {
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  background: url(../img/endless.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+/* line 26, ../sass/_main-music.scss */
+.music .category:nth-child(3) {
+  background: url(../img/racing.jpg) no-repeat;
+  background-size: cover;
+  background-position: 30%;
+}
+/* line 32, ../sass/_main-music.scss */
+.music .category .title-container {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  width: 70px;
+  position: absolute;
+  right: 0;
+}
+/* line 39, ../sass/_main-music.scss */
+.music .category .title-container .bg-title {
+  display: block;
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  right: -170px;
+  top: 45%;
+  width: 400px;
+  font-size: 300%;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+/* line 1, ../sass/_footer.scss */
+.footer {
+  display: none;
+  background: #000;
+  height: 10%;
+  padding: 0 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* line 2, ../sass/_spaces.scss */
+.spaces ul {
+  width: 90%;
+  max-width: 500px;
+  margin: 80px auto;
+}
+/* line 7, ../sass/_spaces.scss */
+.spaces ul li {
+  text-align: center;
+  padding: 20px 0;
+  margin: 10px 0;
+  border: 2px solid black;
+  border-radius: 7px;
+  transition: all 0.4s ease;
+  background: #65b38c;
+  border-color: #65b38c;
+}
+/* line 17, ../sass/_spaces.scss */
+.spaces ul li:hover {
+  background: #65b38c;
+  border-color: #65b38c;
+}
+/* line 22, ../sass/_spaces.scss */
+.spaces ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+/* line 3, ../sass/_soundtracks.scss */
+.soundtracks tr td {
+  vertical-align: middle;
+}
+/* line 6, ../sass/_soundtracks.scss */
+.soundtracks tr td.play {
+  text-align: center;
+}
+/* line 10, ../sass/_soundtracks.scss */
+.soundtracks tr td i.fa {
+  width: 40px;
+  height: 40px;
+  font-size: 150%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+/* line 18, ../sass/_soundtracks.scss */
+.soundtracks tr td i.fa.fa-play {
+  border: 1px solid #333;
+  border-radius: 50%;
+  padding-left: 4px;
+}
+
+/* line 1, ../sass/_confirmation-page.scss */
+.confirmation-buttons {
+  float: right;
+  margin-top: 60px;
+}
+/* line 5, ../sass/_confirmation-page.scss */
+.confirmation-buttons a {
+  border: 1px solid;
+  padding: 7px 14px;
+  border-radius: 7px;
+}
+/* line 10, ../sass/_confirmation-page.scss */
+.confirmation-buttons a.confirm {
+  color: #41b334;
+  border-color: #41b334;
+}
+/* line 15, ../sass/_confirmation-page.scss */
+.confirmation-buttons a.cancel {
+  color: #b32d25;
+  border-color: #b32d25;
+}
+
+/* line 1, ../sass/_final-confirmation.scss */
+.space-details {
+  margin-top: 40px;
+  position: relative;
+  height: 500px;
+  padding: 0;
+}
+/* line 7, ../sass/_final-confirmation.scss */
+.space-details .space-title {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+}
+/* line 14, ../sass/_final-confirmation.scss */
+.space-details .space-title h3 {
+  margin-bottom: 0;
+}
+/* line 18, ../sass/_final-confirmation.scss */
+.space-details .space-title p {
+  margin-top: 0;
+}
+/* line 23, ../sass/_final-confirmation.scss */
+.space-details .you-are-confirmed {
+  position: absolute;
+  bottom: 0;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+/* line 30, ../sass/_final-confirmation.scss */
+.space-details .you-are-confirmed .go-or-add {
+  width: 100px;
+  height: 100%;
+  background: #555;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* line 38, ../sass/_final-confirmation.scss */
+.space-details .you-are-confirmed .go-or-add span {
+  display: block;
+  height: 50%;
+  padding-top: 7px;
+  cursor: pointer;
+}
+/* line 44, ../sass/_final-confirmation.scss */
+.space-details .you-are-confirmed .go-or-add span:first-child {
+  border-bottom: 1px solid #000;
+}
+/* line 51, ../sass/_final-confirmation.scss */
+.space-details .song-preview {
+  margin-top: 250px;
+}
+
+/* line 1, ../sass/_drawer.scss */
+#drawer {
+  width: 20%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  z-index: 9999;
+  box-shadow: 2px 0px 4px 1px rgba(0, 0, 0, 0.36);
+}
+/* line 12, ../sass/_drawer.scss */
+#drawer .menu-button {
+  color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 10px;
+  right: -16px;
+  font-size: 125%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/* line 23, ../sass/_drawer.scss */
+#drawer .drawer-content ul {
+  position: relative;
+  top: 100px;
+}
+/* line 27, ../sass/_drawer.scss */
+#drawer .drawer-content ul li {
+  font-size: 125%;
+}
+/* line 30, ../sass/_drawer.scss */
+#drawer .drawer-content ul li a {
+  padding: 20px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+/* line 37, ../sass/_drawer.scss */
+#drawer .drawer-content ul li a:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+/* ================= */
+/* == Open Drawer == */
+/* ================= */
+/* line 53, ../sass/_drawer.scss */
+.open-drawer {
+  -webkit-animation-duration: 0.4s;
+  -webkit-animation-name: openDrawer;
+  -webkit-animation-fill-mode: forwards;
+  animation-duration: 0.4s;
+  animation-name: openDrawer;
+  animation-fill-mode: forwards;
+}
+/* line 61, ../sass/_drawer.scss */
+.open-drawer .menu-button {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+@-webkit-keyframes openDrawer {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes openDrawer {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+/* ================== */
+/* == Close Drawer == */
+/* ================== */
+/* line 91, ../sass/_drawer.scss */
+.close-drawer {
+  animation-name: closeDrawer;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes closeDrawer {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes closeDrawer {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+/* line 2, ../sass/_audio-player.scss */
+.audio-player a {
+  border: 1px solid rgba(70, 70, 70, 0.8);
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  transition: all 0.3s ease;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+/* line 14, ../sass/_audio-player.scss */
+.audio-player a:hover {
+  color: #489413;
+  border-color: #489413;
+}
+
+/* line 1, ../sass/_notification-tray.scss */
+.notification-tray {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  border-bottom-left-radius: 7px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-size: 60%;
+  padding: 9px 80px;
+  background: #eeeeee;
+  color: #333;
+}
+
+/* line 16, ../sass/main.scss */
+.main {
+  height: 70%;
+}

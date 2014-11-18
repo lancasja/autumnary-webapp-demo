@@ -1,0 +1,20 @@
+.confirmation-buttons {
+	float: right;
+	margin-top: 60px;
+
+	a {
+		border: 1px solid;
+		padding: 7px 14px;
+		border-radius: 7px;
+
+		&.confirm {
+			color: #41b334;
+			border-color: #41b334;
+		}
+
+		&.cancel {
+			color: #b32d25;
+			border-color: #b32d25;
+		}
+	}
+}

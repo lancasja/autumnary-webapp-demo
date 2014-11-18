@@ -1,0 +1,45 @@
+html, body, #wrapper {
+	height: 100%;
+}
+
+body {
+	font-family: $font-family;
+	font-size: 18px;
+	overflow-x: hidden;
+}
+
+#wrapper {
+	min-width: 768px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	&:hover {
+		@extend a;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+.section-title {
+	border-top: 2px solid rgba(0, 0, 0, 1);
+	border-bottom: 2px solid rgba(0, 0, 0, 1);
+	padding: 18px 80px;
+	margin: 0 -15px 0 -15px;
+	font-size: 150%;
+	background: #000;
+	color: #fff;
+	position: relative;
+
+	h3 {
+		margin: 0;
+	}
+}
