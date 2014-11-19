@@ -1,0 +1,31 @@
+.thin-banner-ad {
+	height: 61px;
+	background: #ECF3F9;
+	box-shadow: inset 0 0 11px 0 rgba(0, 0, 0, 0.3);
+	width: 100%;
+	padding: 0;
+	margin-left: 0;
+	text-align: left;
+	position: fixed;
+	bottom: 70px;
+	z-index: 99;
+
+	span {
+		display: block;
+		width: 150px;
+		height: 100%;
+		float: left;
+		text-align: center;
+		vertical-align: middle;
+		color: rgba(0, 0, 0, 0.3);
+		cursor: pointer;
+		transition: all 0.2s ease;
+		font-size: 80%;
+		line-height: 61px;
+
+		&:hover {
+			color: rgba(0, 0, 0, 1);
+			background: rgba(255, 255, 255, 0.5);
+		}
+	}
+}

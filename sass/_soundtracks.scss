@@ -1,0 +1,130 @@
+#soundtracks {
+	margin: 0 -15px;
+	.categories {
+		height: auto;
+		margin-bottom: 320px;
+
+		h4 {
+			padding: 0 20px;
+			text-align: center;
+			height: 30px;
+		}
+
+		.row {
+			margin: 0;
+			height: 300px;
+
+			.category {
+				height: 100%;
+				border: 1px solid #000;
+				cursor: pointer;
+				opacity: 0.8;
+				transition: all 0.3s ease;
+				outline: 1px solid #000;
+
+				&:hover {
+					opacity: 1;
+				}
+
+				.category-title {
+					background: rgba(0, 0, 0, 0.7);
+					color: rgba(255, 255, 255, 0.8);
+					position: absolute;
+					right: 0;
+					height: 100%;
+					width: 70px;
+
+					span {
+						display: inline-block;
+						position: absolute;
+						transform: rotate(-90deg);
+						margin-top: 120px;
+						font-size: 150%;
+						white-space: nowrap;
+					}
+					
+				}
+
+				&.action {
+					background: url(../img/action.jpg) no-repeat;
+					background-position: center center;
+					background-size: cover;
+
+					span {
+						left: 0px;
+					}
+				}
+
+				&.endless {
+					background: url(../img/endless.jpg) no-repeat;
+					background-position: center center;
+					background-size: cover;
+
+					span {
+						left: -48px;
+					}
+				}
+
+				&.racing {
+					background: url(../img/racing.jpg) no-repeat;
+					background-position: center center;
+					background-size: cover;
+
+					span {
+						
+					}
+				}
+
+				&.shooter {
+					background: url(../img/shooter.jpg) no-repeat;
+					background-position: center center;
+					background-size: cover;
+
+					span {
+						left: -50px;
+					}
+				}
+
+				&.coins {
+					background: url(../img/coins.jpg) no-repeat;
+					background-position: center center;
+					background-size: cover;
+
+					span {
+						left: 7px;
+					}
+				}
+
+				&.jumps {
+					background: url(../img/jump.jpg) no-repeat;
+					background-position: center top;
+					background-size: cover;
+
+					span {
+						left: 0px;
+					}
+				}
+
+				&.projectiles {
+					background: url(../img/shoot.jpg) no-repeat;
+					background-position: center center;
+					background-size: cover;
+
+					span {
+						left: -23px;
+					}
+				}
+
+				&.explosions {
+					background: url(../img/explosion.jpg) no-repeat;
+					background-position: center center;
+					background-size: cover;
+
+					span {
+						left: -24px;
+					}
+				}
+			}
+		}
+	}
+}

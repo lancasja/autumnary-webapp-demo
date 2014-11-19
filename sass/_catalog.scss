@@ -1,0 +1,25 @@
+.catalog {
+	ul {
+		list-style: none;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			padding: 0 20px;
+			color: rgba(66, 139, 202, 0.7);
+			cursor: pointer;
+
+			&.active {
+				color: rgba(66, 139, 202, 1);
+				border: 1px solid rgba(66, 139, 202, 1);
+				border-radius: 7px;
+			}
+
+			&:hover:not(.active) {
+				color: rgba(66, 139, 202, 1);
+			}
+		}
+	}
+}

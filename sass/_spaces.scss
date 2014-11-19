@@ -1,0 +1,51 @@
+.spaces {
+	margin: 0 -15px;
+
+	.space {
+		height: 200px;
+		text-align: center;
+		border: 1px solid rgb(0, 0, 0);
+		overflow: hidden;
+		filter: blur(50%);
+		padding: 0;
+
+		&:hover img {
+			opacity: 1;
+		}
+
+		img {
+			display: block;
+			position: absolute;
+			opacity: 0.5;
+			transition: all 0.5s ease;
+
+			&.garage {
+				top: -180px;
+			}
+
+			&.tracks {
+				top: -300px;
+			}
+
+			&.title {
+				top: -150px;
+			}
+
+			&.credits {
+				
+			}
+		}
+
+		a {
+			border-radius: 7px;
+			background: #428BCA;
+			border: 1px solid #206FB3;
+			color: #fff;
+			padding: 13px 22px;
+			position: relative;
+			top: 80px;
+			text-decoration: none;
+			box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.17);
+		}
+	}
+}
