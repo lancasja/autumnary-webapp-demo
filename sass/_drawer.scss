@@ -1,144 +1,36 @@
-#drawer {
-	width: 20%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.9);
+.drawer {
 	position: fixed;
+	left: 0px;
 	top: 0;
-	left: 0;
-	transform: translateX(-100%);
-	z-index: 9999;
-	box-shadow: 2px 0px 4px 1px rgba(0, 0, 0, 0.36);
+	z-index: 9;
+	width: 300px;
+	height: 100%;
+	background: rgba(20, 20, 20, 1);
+	transform: translate3d(-300px, 0, 0);
 
-	.menu-button {
-		color: rgba(0, 0, 0, 0.7);
-		position: absolute;
-		top: 10px;
-		right: -16px;
-		font-size: 125%;
-		cursor: pointer;
-		transition: all 0.3s ease;
+	&.open {
+		transform: translate3d(0, 0, 0);
 	}
 
-	.drawer-content {
-		ul {
-			position: relative;
-			top: 100px;
+	.menu-button {
+		position: absolute;
+		top: 14px;
+		right: -37px;
+		cursor: pointer;
+		color: rgb(66, 139, 202);
+	}
 
-			li {
-				font-size: 125%;
+	.drawer-title {
+		background: rgba(255, 255, 255, 0.1);
+		padding: 0.5em;
 
-				a {
-					padding: 20px;
-					display: block;
-					width: 100%;
-					height: 100%;
-					color: #fff;
+		h3 {
+			text-align: center;
+			opacity: 0.6;
 
-					&:hover {
-						background: rgba(255, 255, 255, 0.9);
-						color: #333;
-					}
-				}
+			img {
+				width: 75%;
 			}
-
 		}
 	}
 }
-
-$duration: 0.4s;
-
-/* ================= */
-/* == Open Drawer == */
-/* ================= */
-.open-drawer {
-	-webkit-animation-duration: $duration;
-	-webkit-animation-name: openDrawer;
-	-webkit-animation-fill-mode: forwards;
-					animation-duration: $duration;
-					animation-name: openDrawer;
-					animation-fill-mode: forwards;
-
-	.menu-button {
-		color: rgba(255, 255, 255, 0.7) !important;
-	}
-
-}
-
-@-webkit-keyframes openDrawer {
-	from {
-		transform: translateX(-100%);
-	}
-
-	to {
-		transform: translateX(0);
-	}
-}
-
-@keyframes openDrawer {
-	from {
-		transform: translateX(-100%);
-	}
-
-	to {
-		transform: translateX(0);
-	}
-}
-
-/* ================== */
-/* == Close Drawer == */
-/* ================== */
-
-.close-drawer {
-	animation-name: closeDrawer;
-	animation-duration: $duration;
-	animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes closeDrawer {
-	from {
-		transform: translateX(0);
-	}
-
-	to {
-		transform: translateX(-100%);
-	}
-}
-
-@keyframes closeDrawer {
-	from {
-		transform: translateX(0);
-	}
-
-	to {
-		transform: translateX(-100%);
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
