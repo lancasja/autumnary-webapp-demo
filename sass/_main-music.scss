@@ -1,7 +1,7 @@
 .music {
 	.category {
 		height: 100%;
-		filter: grayscale(100%);
+		-moz-filter: grayscale(100%);
 		transition: all 0.3s;
 		
 		&:hover {
