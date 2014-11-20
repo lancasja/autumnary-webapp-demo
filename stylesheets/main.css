@@ -59,17 +59,71 @@ section .notification-container .notification-box {
 
 /* line 64, ../sass/_base.scss */
 .final-review .review-item {
-  height: 484px;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+  height: 380px;
 }
 /* line 69, ../sass/_base.scss */
+.final-review .review-item h1, .final-review .review-item h3 {
+  margin: 0;
+}
+/* line 72, ../sass/_base.scss */
+.final-review .review-item h1 .fa, .final-review .review-item h3 .fa {
+  margin-left: 9px;
+}
+/* line 77, ../sass/_base.scss */
+.final-review .review-item h1 {
+  margin-top: 45px;
+}
+/* line 81, ../sass/_base.scss */
+.final-review .review-item h3 {
+  margin-left: 95px;
+}
+/* line 85, ../sass/_base.scss */
+.final-review .review-item ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 60px;
+  width: 220px;
+}
+/* line 91, ../sass/_base.scss */
+.final-review .review-item ul li {
+  margin-bottom: 20px;
+}
+/* line 94, ../sass/_base.scss */
+.final-review .review-item ul li span {
+  width: 100px;
+}
+/* line 97, ../sass/_base.scss */
+.final-review .review-item ul li span:nth-child(2) {
+  float: right;
+  text-align: left;
+  color: #777;
+}
+/* line 106, ../sass/_base.scss */
+.final-review .review-item .fa-play {
+  border: 2px solid #333;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  padding-top: 9px;
+  padding-left: 9px;
+  cursor: pointer;
+  opacity: 0.7;
+  position: relative;
+  top: 14px;
+  margin-right: 20px;
+}
+/* line 124, ../sass/_base.scss */
+.final-review .review-item .fa-play:hover {
+  opacity: 1;
+}
+/* line 129, ../sass/_base.scss */
 .final-review .review-item .proceed {
   position: absolute;
   bottom: 20px;
   right: 20px;
 }
-/* line 74, ../sass/_base.scss */
+/* line 134, ../sass/_base.scss */
 .final-review .review-item .proceed a {
   display: block;
   padding: 13px 22px;
@@ -80,32 +134,62 @@ section .notification-container .notification-box {
   border-radius: 7px;
   transition: all 0.3s ease;
 }
-/* line 84, ../sass/_base.scss */
+/* line 144, ../sass/_base.scss */
 .final-review .review-item .proceed a.confirm {
   background: #5cb85c;
   color: rgba(255, 255, 255, 0.9);
 }
-/* line 88, ../sass/_base.scss */
+/* line 148, ../sass/_base.scss */
 .final-review .review-item .proceed a.confirm:hover {
   background: #52ae52;
   color: white;
 }
-/* line 94, ../sass/_base.scss */
+/* line 154, ../sass/_base.scss */
 .final-review .review-item .proceed a.cancel {
   color: rgba(0, 0, 0, 0.4);
 }
-/* line 97, ../sass/_base.scss */
+/* line 157, ../sass/_base.scss */
 .final-review .review-item .proceed a.cancel:hover {
   color: #c50015;
+}
+
+/* line 166, ../sass/_base.scss */
+.big-confirm {
+  text-align: center;
+  margin-top: 20px;
+}
+/* line 170, ../sass/_base.scss */
+.big-confirm .fa-check {
+  font-size: 800%;
+}
+/* line 174, ../sass/_base.scss */
+.big-confirm .go-on-btns {
+  margin: 60px auto 0;
+}
+/* line 177, ../sass/_base.scss */
+.big-confirm .go-on-btns a {
+  display: block;
+  border-radius: 7px;
+  background: #428BCA;
+  border: 1px solid #206FB3;
+  color: #fff;
+  padding: 13px 22px;
+  text-decoration: none;
+  margin: 0 7px;
+  transition: all 0.3s ease;
+}
+/* line 188, ../sass/_base.scss */
+.big-confirm .go-on-btns a:hover {
+  background: #327bbA;
 }
 
 /* line 1, ../sass/_drawer.scss */
 .drawer {
   position: fixed;
-  left: -300px;
+  left: -200px;
   top: 0;
   z-index: 9;
-  width: 300px;
+  width: 200px;
   height: 100%;
   background: #141414;
   transition: all 0.4s ease;
@@ -113,8 +197,9 @@ section .notification-container .notification-box {
 /* line 11, ../sass/_drawer.scss */
 .drawer.open {
   left: 0;
+  box-shadow: 1px 0 6px 1px rgba(0, 0, 0, 0.3);
 }
-/* line 15, ../sass/_drawer.scss */
+/* line 16, ../sass/_drawer.scss */
 .drawer .menu-button {
   position: absolute;
   top: 14px;
@@ -122,19 +207,45 @@ section .notification-container .notification-box {
   cursor: pointer;
   color: #428bca;
 }
-/* line 23, ../sass/_drawer.scss */
+/* line 24, ../sass/_drawer.scss */
 .drawer .drawer-title {
   background: rgba(255, 255, 255, 0.1);
   padding: 0.1em;
 }
-/* line 27, ../sass/_drawer.scss */
+/* line 28, ../sass/_drawer.scss */
 .drawer .drawer-title h3 {
   text-align: center;
   opacity: 0.8;
 }
-/* line 31, ../sass/_drawer.scss */
+/* line 32, ../sass/_drawer.scss */
 .drawer .drawer-title h3 img {
-  width: 50%;
+  width: 70%;
+}
+/* line 38, ../sass/_drawer.scss */
+.drawer .drawer-links {
+  margin-top: 80px;
+}
+/* line 41, ../sass/_drawer.scss */
+.drawer .drawer-links ul {
+  list-style: none;
+  padding: 0;
+}
+/* line 45, ../sass/_drawer.scss */
+.drawer .drawer-links ul li {
+  padding: 9px 20px;
+  color: #ddd;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/* line 52, ../sass/_drawer.scss */
+.drawer .drawer-links ul li:hover {
+  background: #ddd;
+  color: #333;
+}
+/* line 57, ../sass/_drawer.scss */
+.drawer .drawer-links ul li .fa {
+  margin-right: 20px;
 }
 
 /* line 1, ../sass/_header.scss */

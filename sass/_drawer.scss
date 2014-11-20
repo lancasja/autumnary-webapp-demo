@@ -1,15 +1,16 @@
 .drawer {
 	position: fixed;
-	left: -300px;
+	left: -200px;
 	top: 0;
 	z-index: 9;
-	width: 300px;
+	width: 200px;
 	height: 100%;
 	background: rgba(20, 20, 20, 1);
 	transition: all 0.4s ease;
 
 	&.open {
 		left: 0;
+		box-shadow: 1px 0 6px 1px rgba(0, 0, 0, 0.3);
 	}
 
 	.menu-button {
@@ -29,7 +30,33 @@
 			opacity: 0.8;
 
 			img {
-				width: 50%;
+				width: 70%;
+			}
+		}
+	}
+
+	.drawer-links {
+		margin-top: 80px;
+
+		ul {
+			list-style: none;
+			padding: 0;
+
+			li {
+				padding: 9px 20px;
+				color: #ddd;
+				margin: 20px 0;
+				cursor: pointer;
+				transition: all 0.3s ease;
+
+				&:hover {
+					background: #ddd;
+					color: #333;
+				}
+
+				.fa {
+					margin-right: 20px;
+				}
 			}
 		}
 	}
