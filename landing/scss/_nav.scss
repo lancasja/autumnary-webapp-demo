@@ -1,0 +1,25 @@
+nav {
+	position: relative;
+
+	h1 {
+		margin: 0;
+
+		.brand {
+			img {
+				float: left;
+				height: 30px;
+			}
+		}
+	}
+
+	ul {
+		position: absolute;
+		top: 30px;
+		right: 15%;
+
+		li {
+			display: inline-block;
+			margin: 0 18px;
+		}
+	}
+}
