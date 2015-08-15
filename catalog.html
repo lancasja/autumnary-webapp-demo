@@ -46,7 +46,7 @@
 	</header>
 
 	<section id="soundtracks" class="container-fluid">
-
+		
 		<div class="section-title row">
 			<h3 class="col-sm-6"><i class="fa fa-list"></i> catalog</h3>
 			<div class="col-sm-6 notification-container">
@@ -93,7 +93,7 @@
 				<tbody>
 					<tr>
 						<td class="center"><i class="fa fa-info"></i></td>
-						<td class="center"><button id="tempButton" class="play" onclick="play()"></button></td>
+						<td class="center"><i class="fa fa-play"></i></td>
 						<td>Oaffy's Parade</td>
 						<td>Jimmy Fontana</td>
 						<td>Rock</td>
@@ -135,18 +135,6 @@
 					</tr>
 				</tbody>
 			</table>
-			<audio id="music" preload="true">
-				<source src="music/oaffysparade.mp3">
-			</audio>
-			<div id="audioplayer" class="hidden">
-                <p class="playertext"><b >Oaffey's Parade</b><br>Jimmy Fontana</p>
-				<button id="pButton" class="play" onclick="play()"></button>
-				<div id="timeline">
-					<div id="playhead"></div>
-				</div>
-                <p id="timetext" class="timetext">0:00/4:09</p>
-			</div>
-			<br><br><br><br><br><br><br><br>
 		</div>
 	</section>
 
@@ -168,10 +156,9 @@
 
 
 
+
 	<script src="js/bootstrap-custom.min.js"></script>
 	<script src="js/drawer.js"></script>
-	<script src="js/music.js"></script>
-
 </body>
 </html>
 
