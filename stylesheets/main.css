@@ -489,6 +489,7 @@ header .arrow-box:hover {
   left: -24px;
 }
 
+
 /* line 2, ../sass/_catalog.scss */
 .catalog ul {
   list-style: none;
@@ -570,4 +571,69 @@ footer p {
   color: rgba(255, 255, 255, 0.7);
   line-height: 50px;
   text-indent: 20px;
+}
+
+/*music stuff*/
+#audioplayer{
+  width: 600px;
+  height: 120px;
+  margin: 50px auto auto auto;
+  border: solid;
+}
+
+#pButton{
+  height:60px;
+  width: 60px;
+  margin-top: -30px;
+  border: none;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  float:left;
+  outline:none;
+}
+
+#tempButton{
+  height:18px;
+  width: 37px;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  outline:none;
+}
+
+.play{background: url(../img/play.jpg);}
+.pause{background: url(../img/pause.jpg) ;}
+
+#timeline{
+  width: 410px;
+  height: 20px;
+  margin-top: -10px;
+  float: left;
+  border-radius: 15px;
+  background: rgba(0,0,0,.3);
+}
+#playhead{
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-top: 1px;
+  background: rgba(0, 0, 0,1);
+
+}
+
+.playertext {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.timetext {
+    margin-top: -13px;
+    width: 570px;
+    text-align: right
 }
