@@ -1,7 +1,10 @@
 var music = document.getElementById('music'); // id for audio element
 var duration; // Duration of audio clip
 var pButton = document.getElementById('pButton'); // play button
-var tempButton = document.getElementById('tempButton'); //temp
+var btn1 = document.getElementById('btn1'); //oaffysparade
+var btn2 = document.getElementById('btn2'); //reggaeton O'Bricks
+var btn3 = document.getElementById('btn3'); //scattaflya
+var btn4 = document.getElementById('btn4'); //wooks and grannies
                                          
 var playhead = document.getElementById('playhead'); // playhead
 
@@ -11,6 +14,7 @@ var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
 
 var audioplayer = document.getElementById('audioplayer');
 var timetext = document.getElementById('timetext');
+var audioplayertext = document.getElementById('audioplayertext');
 // timeupdate event listener
 music.addEventListener("timeupdate", timeUpdate, false);
 
@@ -87,24 +91,89 @@ function timeUpdate() {
 }
 
 //Play and Pause
-function play() {
+function play(track) {
+    if (track !=0) {
+        source = "music/" + track + ".mp3";
+        if (music.src.indexOf(source) == -1) music.src = source;
+    }
     // start music
     if (music.paused) {
         audioplayer.className="";
         timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
         music.play();
         // remove play, add pause
-        pButton.className = "";
         pButton.className = "pause";
-        tempButton.className = "";
-        tempButton.className = "pause";
+        switch(track) {
+            case 0:
+                var trackNum = parseInt(music.src.substring(music.src.indexOf("music")+6,music.src.indexOf("music")+7));
+                switch(trackNum) {
+                    case 1:
+                        btn1.className="pause";
+                        break;
+                    case 2:
+                        btn2.className="pause";
+                        break;
+                    case 3:
+                        btn3.className="pause";
+                        break;
+                    case 4:
+                        btn4.className="pause";
+                        break;
+                }
+                break;
+            case 1:
+                btn1.className="pause";
+                btn2.className="play";
+                btn3.className="play";
+                btn4.className="play";
+                audioplayertext.innerHTML = "<b>Oaffy's Parade</b><br>Jimmy Fontana";
+                break;
+            case 2:
+                btn1.className="play";
+                btn2.className="pause";
+                btn3.className="play";
+                btn4.className="play";
+                audioplayertext.innerHTML = "<b>Reggaeton O' Bricks</b><br>Jimmy Fontana";
+                break;
+            case 3:
+                btn1.className="play";
+                btn2.className="play";
+                btn3.className="pause";
+                btn4.className="play";
+                audioplayertext.innerHTML = "<b>ScattafIya</b><br>Jimmy Fontana";
+                break;
+            case 4:
+                btn1.className="play";
+                btn2.className="play";
+                btn3.className="play";
+                btn4.className="pause";
+                audioplayertext.innerHTML = "<b>Wooks and Grannies</b><br>Jimmy Fontana";
+                break;
+        }
     } else { // pause music
         music.pause();
         // remove pause, add play
-        pButton.className = "";
         pButton.className = "play";
-        tempButton.className = "";
-        tempButton.className = "play";
+        switch(track) {
+            case 0:
+                btn1.className="play";
+                btn2.className="play";
+                btn3.className="play";
+                btn4.className="play";         
+                break;
+            case 1:
+                btn1.className="play";
+                break;
+            case 2:
+                btn2.className="play";
+                break;
+            case 3:
+                btn3.className="play";
+                break;
+            case 4:
+                btn4.className="play";
+                break;
+        }
     }
 }
 

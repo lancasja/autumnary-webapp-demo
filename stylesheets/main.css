@@ -593,8 +593,11 @@ footer p {
   outline:none;
 }
 
-#tempButton{
+
+.play{
+  background: url(../img/play.jpg);
   height:18px;
+  width: 37px;
   width: 37px;
   border: none;
   background-repeat: no-repeat;
@@ -603,8 +606,16 @@ footer p {
   outline:none;
 }
 
-.play{background: url(../img/play.jpg);}
-.pause{background: url(../img/pause.jpg) ;}
+.pause{
+  background: url(../img/pause.jpg);
+  height:18px;
+  width: 37px;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  outline:none;
+}
 
 #timeline{
   width: 400px;
