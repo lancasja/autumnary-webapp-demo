@@ -75,10 +75,15 @@ function timeUpdate() {
     }
     var mins = Math.round(music.currentTime/60);
     var secs = Math.round(music.currentTime%60);
+    var totalMins = Math.round(duration/60);
+    var totalSecs = Math.round(duration%60);
     if (secs<10) {
         secs = "0" + secs;
     }
-    timetext.textContent = mins + ":" + secs + "/4:09"
+    if (totalSecs<10) {
+        totalSecs = "0" +totalSecs;
+    }
+    timetext.textContent = mins + ":" + secs + "/" + totalMins + ":" + totalSecs;
 }
 
 //Play and Pause
