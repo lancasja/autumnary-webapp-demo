@@ -15,6 +15,7 @@ var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
 var audioplayer = document.getElementById('audioplayer');
 var timetext = document.getElementById('timetext');
 var audioplayertext = document.getElementById('audioplayertext');
+var progress = document.getElementById('progress');
 // timeupdate event listener
 music.addEventListener("timeupdate", timeUpdate, false);
 
@@ -73,6 +74,7 @@ function moveplayhead(e) {
 function timeUpdate() {
     var playPercent = timelineWidth * (music.currentTime / duration);
     playhead.style.marginLeft = playPercent + "px";
+    progress.width = playPercent
     if (music.currentTime == duration) {
         pButton.className = "";
         pButton.className = "play";
@@ -92,6 +94,9 @@ function timeUpdate() {
 
 //Play and Pause
 function play(track) {
+    if (music.src=="" && track=="0") {
+    } else {
+    
     if (track !=0) {
         source = "music/" + track + ".mp3";
         if (music.src.indexOf(source) == -1) music.src = source;
@@ -102,7 +107,7 @@ function play(track) {
         timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
         music.play();
         // remove play, add pause
-        pButton.className = "pause";
+        pButton.className = "pause-main";
         switch(track) {
             case 0:
                 var trackNum = parseInt(music.src.substring(music.src.indexOf("music")+6,music.src.indexOf("music")+7));
@@ -153,7 +158,7 @@ function play(track) {
     } else { // pause music
         music.pause();
         // remove pause, add play
-        pButton.className = "play";
+        pButton.className = "play-main";
         switch(track) {
             case 0:
                 btn1.className="play";
@@ -174,6 +179,7 @@ function play(track) {
                 btn4.className="play";
                 break;
         }
+    }
     }
 }
 

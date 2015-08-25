@@ -1,0 +1,223 @@
+#header {
+    background: #000000;
+    border-radius: 10px;
+    height: 144px;
+}
+
+.logo, .logosub {
+    color: white;
+    font-size: 40px;
+    margin: 0px 0px 0px 0px;
+}
+
+.logo {
+    postion: absolute;
+    margin-left: 68px;
+    margin-top: 26px;
+    font-family: 'Permanent Marker', cursive;
+    width: 247px;
+    height: 58px;
+}
+
+@font-face {
+    font-family: 'Century Gothic Bold';
+    src: url(../fonts/century-gothic-bold.ttf);
+}
+.logosub {
+    position: absolute;
+    left: 327px;
+    top: 24px;
+    font-family: 'Century Gothic Bold';
+    width: 119px;
+    height: 49px;
+}
+
+.sub {
+    margin: 16px 0px 0px 0px;
+    background: #d8d8d8;
+    height: 44px;
+    border-radius: 0px 0px 10px 10px;
+    opacity: 0.3;
+}
+
+#doublebar {
+    position: absolute;
+    height: 13.4px;
+    width: 34.5px;
+    color: white;
+    left: 21.5px;
+    top: 115.8px;
+}
+
+.bcraft {
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    right: 30px;
+    top: 112px;
+}
+
+.icons-row {
+    padding-top: 10px;
+    text-align: right;
+    padding-right: 35px;
+    word-spacing: 13px;
+}
+
+.catalog-title {
+    position: relative;
+    margin-left: 0px;
+    width: 293px;
+    height: 59px;
+    background: #424242;
+    border-radius: 0px 10px 10px 0px;
+}
+.catalog-title-text {
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    width:203px;
+    height:27px;
+    right: 10px;
+    top:17px;
+    font-family: 'Century Gothic';
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+}
+
+.album-art, .divider-bar, #audioplayer {
+    width: auto;
+    margin-top: 51px;
+    margin-right: 50px;
+    margin-left: 50px;
+    height: 406px;
+    background: rgba(83, 146, 219, 0.8);
+}
+
+.divider-bar {
+    margin-top: 0px;
+    background: #4a4a4a;
+    height: 34px;
+}
+
+/*music stuff*/
+
+#audioplayer{
+    position: relative;
+    margin-top: 0px;
+    height: 91px;
+    background: white;
+    border-color: #424242;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#pButton{
+    position: absolute;
+    width: 140px;
+    height: 89px;
+    background-size: 150% 150%;
+}
+
+
+.play-main{
+    background: url(../img/play-white.png);
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    outline:none;
+}
+
+.pause-main{
+    background: url(../img/pause-white.png);
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    outline:none;
+}
+
+.play{
+  background: url(../img/play.jpg);
+  height:18px;
+  width: 37px;
+  width: 37px;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  outline:none;
+}
+
+.pause{
+  background: url(../img/pause.jpg);
+  height:18px;
+  width: 37px;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  outline:none;
+}
+
+#timeline, #progress{
+    width: auto;
+    height: 91px;
+    margin-left: 140px;
+}
+#playhead{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-top: 0px;
+    background: rgba(0, 0, 0,1);
+
+}
+
+#audioplayertext {
+    font-family: 'Century Gothic';
+    font-size: 24px;
+    height:91px;
+    position: absolute;
+    text-align: center;
+    margin-top: 0px;
+    left: 140px;
+    right: 0px;
+    width: auto;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+#timetext {
+    position: absolute;
+    font-family: 'Century Gothic';
+    font-size: 24px;
+    width: 117px;
+    text-align: center;
+    right: 37px;
+    margin: 0px;
+    top: 28px;
+}
+
+#progress {
+    height: 89px;
+    width: 0%;
+    background: grey;
+    margin-left:0px;
+}
+
+#soundtracks {
+    margin: 150px 50px 0px 50px;
+    padding:0px;
+}
+
+.catalog {
+    margin: 0px;
+    padding: 0px 0px 0px 30px;
+    width: 100%;
+}
+
+td, th {
+    font-family: 'Century Gothic';
+    font-size: 20px;
+}
