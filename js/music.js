@@ -74,12 +74,12 @@ function moveplayhead(e) {
 function timeUpdate() {
     var playPercent = timelineWidth * (music.currentTime / duration);
     playhead.style.marginLeft = playPercent + "px";
-    progress.width = playPercent
+    progress.style.width = playPercent + "px";
     if (music.currentTime == duration) {
         pButton.className = "";
-        pButton.className = "play";
+        pButton.className = "play-main";
     }
-    var mins = Math.round(music.currentTime/60);
+    var mins = Math.floor(music.currentTime/60);
     var secs = Math.round(music.currentTime%60);
     var totalMins = Math.round(duration/60);
     var totalSecs = Math.round(duration%60);
