@@ -4,18 +4,17 @@ var pButton = document.getElementById('pButton'); // play button
 var btn1 = document.getElementById('btn1'); //oaffysparade
 var btn2 = document.getElementById('btn2'); //reggaeton O'Bricks
 var btn3 = document.getElementById('btn3'); //scattaflya
-var btn4 = document.getElementById('btn4'); //wooks and grannies
-                                         
+var btn4 = document.getElementById('btn4'); //wooks and grannies                                        
 var playhead = document.getElementById('playhead'); // playhead
-
 var timeline = document.getElementById('timeline'); // timeline
 // timeline width adjusted for playhead
 var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
-
 var audioplayer = document.getElementById('audioplayer');
 var timetext = document.getElementById('timetext');
-var audioplayertext = document.getElementById('audioplayertext');
 var progress = document.getElementById('progress');
+var trackArtist = document.getElementById('track-artist');
+var trackTitle = document.getElementById('track-title');
+var albumArt = document.getElementById('album-art');
 // timeupdate event listener
 music.addEventListener("timeupdate", timeUpdate, false);
 
@@ -131,28 +130,33 @@ function play(track) {
                 btn2.className="play";
                 btn3.className="play";
                 btn4.className="play";
-                audioplayertext.innerHTML = "<b>Oaffy's Parade</b><br>Jimmy Fontana";
+                trackArtist.textContent = "Jimmy Fontana";
+                trackTitle.textContent = "Oaffy's Parade";
+                albumArt.style.backgroundImage = "url(../img/jimmy_fontana_album.png)";
                 break;
             case 2:
                 btn1.className="play";
                 btn2.className="pause";
                 btn3.className="play";
                 btn4.className="play";
-                audioplayertext.innerHTML = "<b>Reggaeton O' Bricks</b><br>Jimmy Fontana";
+                trackArtist.textContent = "Jimmy Fontana";
+                trackTitle.textContent = "Reggaeton O' Bricks";
                 break;
             case 3:
                 btn1.className="play";
                 btn2.className="play";
                 btn3.className="pause";
                 btn4.className="play";
-                audioplayertext.innerHTML = "<b>ScattafIya</b><br>Jimmy Fontana";
+                trackArtist.textContent = "Jimmy Fontana";
+                trackTitle.textContent = "ScattafIya";
                 break;
             case 4:
                 btn1.className="play";
                 btn2.className="play";
                 btn3.className="play";
                 btn4.className="pause";
-                audioplayertext.innerHTML = "<b>Wooks and Grannies</b><br>Jimmy Fontana";
+                trackArtist.textContent = "Jimmy Fontana";
+                trackTitle.textContent = "Wooks and Grannies";
                 break;
         }
     } else { // pause music

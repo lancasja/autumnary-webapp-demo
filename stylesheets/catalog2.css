@@ -84,13 +84,45 @@
     color: white;
 }
 
-.album-art, .divider-bar, #audioplayer {
+#album-art, .divider-bar, #audioplayer {
+    position: relative;
     width: auto;
     margin-top: 51px;
     margin-right: 50px;
     margin-left: 50px;
     height: 406px;
     background: rgba(83, 146, 219, 0.8);
+}
+
+#track-artist-block, #track-title-block {
+    position: absolute;
+    background: rgba(74, 73, 74, 0.7);
+    width: 247px;
+    height: 57px;
+    margin-top:0px;
+    top:28px;
+    left: 0px;
+    text-align: center;
+}
+
+#track-title-block {
+    width: 298px;
+    height: 38px;
+    top: 104px;
+}
+
+#track-artist, #track-title {
+    margin: 0px;
+    font-family: Helvetica;
+    font-size: 24px;
+    color: white;
+    margin-top: 12px;
+}
+
+#track-title {
+    font-style: oblique;
+    font-size: 20px;
+    margin-top: 6px;
 }
 
 .divider-bar {
@@ -163,25 +195,12 @@
     height: 91px;
     margin-left: 140px;
 }
-#playhead{
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    margin-top: 0px;
-    background: rgba(0, 0, 0,1);
 
-}
-
-#audioplayertext {
-    font-family: 'Century Gothic';
-    font-size: 24px;
-    height:91px;
-    position: absolute;
-    text-align: center;
-    margin-top: 0px;
-    left: 140px;
-    right: 0px;
-    width: auto;
+#playhead {
+    width: 10px;
+    height: 91px;
+    margin-top: -90px;
+    background: rgba(0, 0, 0, 0);
 }
 
 .hidden {
@@ -201,7 +220,7 @@
 
 #progress {
     height: 89px;
-    width: 0%;
+    width: 0px;
     background: grey;
     margin-left:0px;
 }

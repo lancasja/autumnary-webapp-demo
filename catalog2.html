@@ -33,7 +33,9 @@
             <h1 class="catalog-title-text">RACING CATALOG</h1>
         </div>
         
-        <section class="container-fluid album-art">
+        <section class="container-fluid" id="album-art">
+            <div id="track-artist-block"><p id="track-artist"></p></div>
+            <div id="track-title-block"><p id="track-title"></p></div>
         </section>
         
         <section class="container-fluid divider-bar">
@@ -43,7 +45,6 @@
         <audio id="music" preload="true"></audio>
         <div id="audioplayer">
             <button id="pButton" class="play-main" onclick="play(0)"></button>
-            <p id="audioplayertext"><b></b><br></p>
             <div id="timeline">
                 <div id="progress"></div>
 				<div id="playhead"></div>
