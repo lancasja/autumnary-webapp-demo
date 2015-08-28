@@ -26,7 +26,7 @@ timeline.addEventListener("click", function (event) {
 
 // returns click as decimal (.77) of the total timelineWidth
 function clickPercent(e) {
-    return (e.pageX - timeline.offsetLeft) / timelineWidth;
+    return (e.pageX - (timeline.offsetLeft + audioplayer.offsetLeft)) / timelineWidth;
 }
 
 // Makes playhead draggable
@@ -141,6 +141,7 @@ function play(track) {
                 btn4.className="play";
                 trackArtist.textContent = "Jimmy Fontana";
                 trackTitle.textContent = "Reggaeton O' Bricks";
+                albumArt.style.backgroundImage = "url(../img/jimmy_fontana_album.png)";
                 break;
             case 3:
                 btn1.className="play";
@@ -149,6 +150,7 @@ function play(track) {
                 btn4.className="play";
                 trackArtist.textContent = "Jimmy Fontana";
                 trackTitle.textContent = "ScattafIya";
+                albumArt.style.backgroundImage = "url(../img/jimmy_fontana_album.png)";
                 break;
             case 4:
                 btn1.className="play";
@@ -157,6 +159,7 @@ function play(track) {
                 btn4.className="pause";
                 trackArtist.textContent = "Jimmy Fontana";
                 trackTitle.textContent = "Wooks and Grannies";
+                albumArt.style.backgroundImage = "url(../img/jimmy_fontana_album.png)";
                 break;
         }
     } else { // pause music
