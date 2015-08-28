@@ -96,6 +96,11 @@
     background-repeat: no-repeat;
 }
 
+#album-art {
+    background-image: url("../img/default_album_B.png");
+    background-size: cover;
+}
+
 #track-artist-block, #track-title-block {
     position: absolute;
     background: rgba(74, 73, 74, 0.7);
@@ -134,17 +139,20 @@
 }
 
 #analyser_render {
-    margin-left: 50px;
-    height: 50px;
+    position: absolute;
+    margin-left: 0px;
+    height: 89px;
     width: auto;
     background: #4a4a4a;
+    opacity: 0.5;
+    top: 0px;
 }
 
 /*music stuff*/
 
 #audioplayer{
     position: relative;
-    margin-top: -5px;
+    margin-top: 0px;
     height: 91px;
     background: white;
     border-color: #424242;

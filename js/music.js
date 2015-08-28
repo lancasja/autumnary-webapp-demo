@@ -25,7 +25,7 @@ function initMp3Player(){
 	context = new webkitAudioContext(); // AudioContext object instance
 	analyser = context.createAnalyser(); // AnalyserNode method
 	canvas = document.getElementById('analyser_render');
-    canvas.style.width = window.innerWidth - 117 + "px";
+    canvas.style.width = window.innerWidth - 258 + "px";
 	ctx = canvas.getContext('2d');
 	// Re-route audio playback into the processing graph of the AudioContext
 	source = context.createMediaElementSource(music); 
