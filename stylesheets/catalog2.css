@@ -84,7 +84,7 @@
     color: white;
 }
 
-#album-art, #divider-bar, #audioplayer {
+#album-art, .divider-bar, #audioplayer {
     position: relative;
     width: auto;
     margin-top: 51px;
@@ -127,17 +127,24 @@
     margin-top: 6px;
 }
 
-#divider-bar {
+.divider-bar {
     margin-top: 0px;
     background: #4a4a4a;
     height: 34px;
+}
+
+#analyser_render {
+    margin-left: 50px;
+    height: 50px;
+    width: auto;
+    background: #4a4a4a;
 }
 
 /*music stuff*/
 
 #audioplayer{
     position: relative;
-    margin-top: 0px;
+    margin-top: -5px;
     height: 91px;
     background: white;
     border-color: #424242;
