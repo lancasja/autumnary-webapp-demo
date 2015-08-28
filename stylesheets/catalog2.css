@@ -84,14 +84,16 @@
     color: white;
 }
 
-#album-art, .divider-bar, #audioplayer {
+#album-art, #divider-bar, #audioplayer {
     position: relative;
     width: auto;
     margin-top: 51px;
     margin-right: 50px;
     margin-left: 50px;
     height: 406px;
-    background: rgba(83, 146, 219, 0.8);
+    background-color: rgba(83, 146, 219, 0.8);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #track-artist-block, #track-title-block {
@@ -125,7 +127,7 @@
     margin-top: 6px;
 }
 
-.divider-bar {
+#divider-bar {
     margin-top: 0px;
     background: #4a4a4a;
     height: 34px;
