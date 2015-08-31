@@ -183,19 +183,19 @@ function play(track) {
                 pauseBtns(5);
                 trackArtist.textContent = "Hurricane Thursday";
                 trackTitle.textContent = "JamSpot";
-                albumArt.style.backgroundImage = "url(../img/jimmy_fontana_album.png)";
+                albumArt.style.backgroundImage = "url(../img/hurricane.jpg)";
                 break;
             case 6:
                 pauseBtns(6);
                 trackArtist.textContent = "Hurricane Thursday";
                 trackTitle.textContent = "Bluesy";
-                albumArt.style.backgroundImage = "url(../img/jimmy_fontana_album.png)";
+                albumArt.style.backgroundImage = "url(../img/hurricane.jpg)";
                 break;
             case 7:
                 pauseBtns(7);
                 trackArtist.textContent = "Hurricane Thursday";
                 trackTitle.textContent = "Westside";
-                albumArt.style.backgroundImage = "url(../img/jimmy_fontana_album.png)";
+                albumArt.style.backgroundImage = "url(../img/hurricane.jpg)";
                 break;
         }
     } else { // pause music
