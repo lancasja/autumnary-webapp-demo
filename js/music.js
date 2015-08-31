@@ -1,10 +1,16 @@
 var music = document.getElementById('music'); // id for audio element
 var duration; // Duration of audio clip
-var pButton = document.getElementById('pButton'); // play button
-var btn1 = document.getElementById('btn1'); //oaffysparade
-var btn2 = document.getElementById('btn2'); //reggaeton O'Bricks
-var btn3 = document.getElementById('btn3'); //scattaflya
-var btn4 = document.getElementById('btn4'); //wooks and grannies                                        
+
+var btn = []; // array of buttons
+btn.push(document.getElementById('pButton')); // play button
+btn.push(document.getElementById('btn1')); //oaffysparade
+btn.push(document.getElementById('btn2')); //reggaeton O'Bricks
+btn.push(document.getElementById('btn3')); //scattaflya
+btn.push(document.getElementById('btn4')); //wooks and grannies 
+btn.push(document.getElementById('btn5')); //JamSpot
+btn.push(document.getElementById('btn6')); //Bluesy
+btn.push(document.getElementById('btn7')); //Westside
+
 var playhead = document.getElementById('playhead'); // playhead
 var timeline = document.getElementById('timeline'); // timeline
 // timeline width adjusted for playhead
@@ -112,12 +118,12 @@ function timeUpdate() {
     playhead.style.marginLeft = playPercent + "px";
     progress.style.width = playPercent + "px";
     if (music.currentTime == duration) {
-        pButton.className = "";
-        pButton.className = "play-main";
+        btn[0].className = "";
+        btn[0].className = "play-main";
     }
     var mins = Math.floor(music.currentTime/60);
     var secs = Math.round(music.currentTime%60);
-    var totalMins = Math.round(duration/60);
+    var totalMins = Math.floor(duration/60);
     var totalSecs = Math.round(duration%60);
     if (secs<10) {
         secs = "0" + secs;
@@ -143,91 +149,73 @@ function play(track) {
         timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
         music.play();
         // remove play, add pause
-        pButton.className = "pause-main";
+        btn[0].className = "pause-main";
         switch(track) {
             case 0:
                 var trackNum = parseInt(music.src.substring(music.src.indexOf("music")+6,music.src.indexOf("music")+7));
-                switch(trackNum) {
-                    case 1:
-                        btn1.className="pause";
-                        break;
-                    case 2:
-                        btn2.className="pause";
-                        break;
-                    case 3:
-                        btn3.className="pause";
-                        break;
-                    case 4:
-                        btn4.className="pause";
-                        break;
-                }
+                btn[trackNum].classname="pause";
                 break;
             case 1:
-                btn1.className="pause";
-                btn2.className="play";
-                btn3.className="play";
-                btn4.className="play";
+                pauseBtns(1);
                 trackArtist.textContent = "Jimmy Fontana";
                 trackTitle.textContent = "Oaffy's Parade";
                 albumArt.style.backgroundImage = "url(../img/jimmy_fontana_album.png)";
                 break;
             case 2:
-                btn1.className="play";
-                btn2.className="pause";
-                btn3.className="play";
-                btn4.className="play";
+                pauseBtns(2);
                 trackArtist.textContent = "Jimmy Fontana";
                 trackTitle.textContent = "Reggaeton O' Bricks";
                 albumArt.style.backgroundImage = "url(../img/jimmy_fontana_album.png)";
                 break;
             case 3:
-                btn1.className="play";
-                btn2.className="play";
-                btn3.className="pause";
-                btn4.className="play";
+                pauseBtns(3);
                 trackArtist.textContent = "Jimmy Fontana";
                 trackTitle.textContent = "ScattafIya";
                 albumArt.style.backgroundImage = "url(../img/jimmy_fontana_album.png)";
                 break;
             case 4:
-                btn1.className="play";
-                btn2.className="play";
-                btn3.className="play";
-                btn4.className="pause";
+                pauseBtns(4);
                 trackArtist.textContent = "Jimmy Fontana";
                 trackTitle.textContent = "Wooks and Grannies";
+                albumArt.style.backgroundImage = "url(../img/jimmy_fontana_album.png)";
+                break;
+            case 5:
+                pauseBtns(5);
+                trackArtist.textContent = "Hurricane Thursday";
+                trackTitle.textContent = "JamSpot";
+                albumArt.style.backgroundImage = "url(../img/jimmy_fontana_album.png)";
+                break;
+            case 6:
+                pauseBtns(6);
+                trackArtist.textContent = "Hurricane Thursday";
+                trackTitle.textContent = "Bluesy";
+                albumArt.style.backgroundImage = "url(../img/jimmy_fontana_album.png)";
+                break;
+            case 7:
+                pauseBtns(7);
+                trackArtist.textContent = "Hurricane Thursday";
+                trackTitle.textContent = "Westside";
                 albumArt.style.backgroundImage = "url(../img/jimmy_fontana_album.png)";
                 break;
         }
     } else { // pause music
         music.pause();
         // remove pause, add play
-        pButton.className = "play-main";
-        switch(track) {
-            case 0:
-                btn1.className="play";
-                btn2.className="play";
-                btn3.className="play";
-                btn4.className="play";         
-                break;
-            case 1:
-                btn1.className="play";
-                break;
-            case 2:
-                btn2.className="play";
-                break;
-            case 3:
-                btn3.className="play";
-                break;
-            case 4:
-                btn4.className="play";
-                break;
-        }
+        btn[0].className = "play-main";
+        pauseBtns(0);
     }
     }
 }
 
 
+function pauseBtns(num) {
+    for	(i = 1; i < btn.length; i++) {
+        btn[i].className="play";
+    }
+    if (num != 0) {
+        btn[num].className="pause";
+    }
+}
 // Gets audio file duration
 music.addEventListener("canplaythrough", function () {
     duration = music.duration;
