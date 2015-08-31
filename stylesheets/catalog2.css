@@ -1,7 +1,15 @@
 #header {
+    position: fixed;
+    width: 100%;
     background: #000000;
     border-radius: 10px;
     height: 144px;
+    z-index: 100;
+}
+
+.placeholder {
+    height: 144px;
+    width: 100%;
 }
 
 .logo, .logosub {
