@@ -7,9 +7,10 @@ btn.push(document.getElementById('btn1')); //oaffysparade
 btn.push(document.getElementById('btn2')); //reggaeton O'Bricks
 btn.push(document.getElementById('btn3')); //scattaflya
 btn.push(document.getElementById('btn4')); //wooks and grannies 
-btn.push(document.getElementById('btn5')); //JamSpot
-btn.push(document.getElementById('btn6')); //Bluesy
-btn.push(document.getElementById('btn7')); //Westside
+btn.push(document.getElementById('btn5')); //Quiet Drive
+btn.push(document.getElementById('btn6')); //Start of Dawn
+btn.push(document.getElementById('btn7')); //Freeride
+btn.push(document.getElementById('btn8')); //Ride Electric
 
 var playhead = document.getElementById('playhead'); // playhead
 var timeline = document.getElementById('timeline'); // timeline
@@ -181,20 +182,26 @@ function play(track) {
                 break;
             case 5:
                 pauseBtns(5);
-                trackArtist.textContent = "Hurricane Thursday";
-                trackTitle.textContent = "JamSpot";
+                trackArtist.textContent = "JAMLancaster";
+                trackTitle.textContent = "Quiet Dawn";
                 albumArt.style.backgroundImage = "url(../img/hurricane.jpg)";
                 break;
             case 6:
                 pauseBtns(6);
-                trackArtist.textContent = "Hurricane Thursday";
-                trackTitle.textContent = "Bluesy";
+                trackArtist.textContent = "JAMLancaster";
+                trackTitle.textContent = "Start of Dawn";
                 albumArt.style.backgroundImage = "url(../img/hurricane.jpg)";
                 break;
             case 7:
                 pauseBtns(7);
-                trackArtist.textContent = "Hurricane Thursday";
-                trackTitle.textContent = "Westside";
+                trackArtist.textContent = "JAMLancaster";
+                trackTitle.textContent = "Freeride";
+                albumArt.style.backgroundImage = "url(../img/hurricane.jpg)";
+                break;
+            case 8:
+                pauseBtns(8);
+                trackArtist.textContent = "Caliphaze";
+                trackTitle.textContent= "Ride Electric";
                 albumArt.style.backgroundImage = "url(../img/hurricane.jpg)";
                 break;
         }
@@ -224,5 +231,4 @@ music.addEventListener("canplaythrough", function () {
 $('#playButton').click(function() {
     play();
 });
-
 
