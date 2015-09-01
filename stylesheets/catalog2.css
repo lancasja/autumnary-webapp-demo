@@ -255,13 +255,35 @@
     padding:0px;
 }
 
-.catalog {
-    margin: 0px;
-    padding: 0px 0px 0px 30px;
-    width: 100%;
-}
-
 td, th {
     font-family: 'Century Gothic';
     font-size: 20px;
+    padding: 8px;
+}
+
+td {
+    border-style: solid;
+    border-width: 2px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.custom-table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.no-border-left, .no-side-borders {
+    border-left-width: 0px;
+}
+
+.no-border-right, .no-side-borders {
+    border-right-width: 0px;
 }
