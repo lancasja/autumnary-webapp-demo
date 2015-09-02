@@ -31,6 +31,12 @@
     font-family: 'Century Gothic Bold';
     src: url(../fonts/century-gothic-bold.ttf);
 }
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url(../fonts/century-gothic.ttf);
+}
+
 .logosub {
     position: absolute;
     left: 327px;
@@ -234,7 +240,7 @@
 
 #timetext {
     position: absolute;
-    font-family: 'Century Gothic';
+    font-family: 'Century Gothic', 'Century Gothic Bold';
     font-size: 24px;
     width: 117px;
     text-align: center;
@@ -256,7 +262,7 @@
 }
 
 td, th {
-    font-family: 'Century Gothic';
+    font-family: 'Century Gothic', 'Century Gothic Bold';
     font-size: 20px;
     padding: 8px;
 }
