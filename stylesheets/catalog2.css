@@ -197,26 +197,26 @@
 }
 
 .play{
-  background: url(../img/play.jpg);
-  height:18px;
-  width: 37px;
-  width: 37px;
-  border: none;
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: center;
-  outline:none;
+    background: url(../img/play.jpg);
+    height:18px;
+    width: 37px;
+    width: 37px;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    outline:none;
 }
 
 .pause{
-  background: url(../img/pause.jpg);
-  height:18px;
-  width: 37px;
-  border: none;
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: center;
-  outline:none;
+    background: url(../img/pause.jpg);
+    height:18px;
+    width: 37px;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    outline:none;
 }
 
 #timeline, #progress{
@@ -317,9 +317,17 @@ td {
 }
 
 .fontana {
-    
 }
 
-.JAM {
-    
+.JAM {   
+}
+
+#footer {
+    position: absolute;
+    width: 140px;
+    height: 91.3px;
+    margin-bottom: 0px;
+    left: 153px;
+    background-color: #d8d8d8;
+    border-radius: 5px;
 }

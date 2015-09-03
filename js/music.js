@@ -148,78 +148,78 @@ function timeUpdate() {
 function play(track) {
     if (music.src=="" && track=="0") {
     } else {
-    
-    if (track !=0) {
-        source = "music/" + track + ".mp3";
-        if (music.src.indexOf(source) == -1) music.src = source;
-    }
-    // start music
-    if (music.paused) {
-        audioplayer.className="";
-        timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
-        music.play();
-        // remove play, add pause
-        btn[0].className = "pause-main";
-        switch(track) {
-            case 0:
-                var trackNum = parseInt(music.src.substring(music.src.indexOf("music")+6,music.src.indexOf("music")+7));
-                btn[trackNum].classname="pause";
-                break;
-            case 1:
-                pauseBtns(1);
-                trackArtist.textContent = "Jimmy Fontana";
-                trackTitle.textContent = "Oaffy's Parade";
-                albumArt.style.backgroundImage = "url(../img/jimmy_fontana_album.png)";
-                break;
-            case 2:
-                pauseBtns(2);
-                trackArtist.textContent = "Jimmy Fontana";
-                trackTitle.textContent = "Reggaeton O' Bricks";
-                albumArt.style.backgroundImage = "url(../img/jimmy_fontana_album.png)";
-                break;
-            case 3:
-                pauseBtns(3);
-                trackArtist.textContent = "Jimmy Fontana";
-                trackTitle.textContent = "ScattafIya";
-                albumArt.style.backgroundImage = "url(../img/jimmy_fontana_album.png)";
-                break;
-            case 4:
-                pauseBtns(4);
-                trackArtist.textContent = "Jimmy Fontana";
-                trackTitle.textContent = "Wooks and Grannies";
-                albumArt.style.backgroundImage = "url(../img/jimmy_fontana_album.png)";
-                break;
-            case 5:
-                pauseBtns(5);
-                trackArtist.textContent = "JAMLancaster";
-                trackTitle.textContent = "Quiet Dawn";
-                albumArt.style.backgroundImage = "url(../img/hurricane.jpg)";
-                break;
-            case 6:
-                pauseBtns(6);
-                trackArtist.textContent = "JAMLancaster";
-                trackTitle.textContent = "Start of Dawn";
-                albumArt.style.backgroundImage = "url(../img/hurricane.jpg)";
-                break;
-            case 7:
-                pauseBtns(7);
-                trackArtist.textContent = "JAMLancaster";
-                trackTitle.textContent = "Freeride";
-                albumArt.style.backgroundImage = "url(../img/hurricane.jpg)";
-                break;
-            case 8:
-                pauseBtns(8);
-                trackArtist.textContent = "Caliphaze";
-                trackTitle.textContent= "Ride Electric";
-                albumArt.style.backgroundImage = "url(../img/hurricane.jpg)";
-                break;
+
+        if (track !=0) {
+            source = "music/" + track + ".mp3";
+            if (music.src.indexOf(source) == -1) music.src = source;
         }
-    } else { // pause music
-        music.pause();
-        // remove pause, add play
-        btn[0].className = "play-main";
-        pauseBtns(0);
-    }
+        // start music
+        if (music.paused) {
+            audioplayer.className="";
+            timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
+            music.play();
+            // remove play, add pause
+            btn[0].className = "pause-main";
+            switch(track) {
+                case 0:
+                    var trackNum = parseInt(music.src.substring(music.src.indexOf("music")+6,music.src.indexOf("music")+7));
+                    btn[trackNum].classname="pause";
+                    break;
+                case 1:
+                    pauseBtns(1);
+                    trackArtist.textContent = "Jimmy Fontana";
+                    trackTitle.textContent = "Oaffy's Parade";
+                    albumArt.style.backgroundImage = "url(../img/jimmy_fontana_album.png)";
+                    break;
+                case 2:
+                    pauseBtns(2);
+                    trackArtist.textContent = "Jimmy Fontana";
+                    trackTitle.textContent = "Reggaeton O' Bricks";
+                    albumArt.style.backgroundImage = "url(../img/jimmy_fontana_album.png)";
+                    break;
+                case 3:
+                    pauseBtns(3);
+                    trackArtist.textContent = "Jimmy Fontana";
+                    trackTitle.textContent = "ScattafIya";
+                    albumArt.style.backgroundImage = "url(../img/jimmy_fontana_album.png)";
+                    break;
+                case 4:
+                    pauseBtns(4);
+                    trackArtist.textContent = "Jimmy Fontana";
+                    trackTitle.textContent = "Wooks and Grannies";
+                    albumArt.style.backgroundImage = "url(../img/jimmy_fontana_album.png)";
+                    break;
+                case 5:
+                    pauseBtns(5);
+                    trackArtist.textContent = "JAMLancaster";
+                    trackTitle.textContent = "Quiet Dawn";
+                    albumArt.style.backgroundImage = "url(../img/hurricane.jpg)";
+                    break;
+                case 6:
+                    pauseBtns(6);
+                    trackArtist.textContent = "JAMLancaster";
+                    trackTitle.textContent = "Start of Dawn";
+                    albumArt.style.backgroundImage = "url(../img/hurricane.jpg)";
+                    break;
+                case 7:
+                    pauseBtns(7);
+                    trackArtist.textContent = "JAMLancaster";
+                    trackTitle.textContent = "Freeride";
+                    albumArt.style.backgroundImage = "url(../img/hurricane.jpg)";
+                    break;
+                case 8:
+                    pauseBtns(8);
+                    trackArtist.textContent = "Caliphaze";
+                    trackTitle.textContent= "Ride Electric";
+                    albumArt.style.backgroundImage = "url(../img/hurricane.jpg)";
+                    break;
+            }
+        } else { // pause music
+            music.pause();
+            // remove pause, add play
+            btn[0].className = "play-main";
+            pauseBtns(0);
+        }
     }
 }
 
