@@ -318,11 +318,16 @@ td {
 }
 
 .fontana {
+    background-color: white;
 }
 
-.JAM {   
+.JAM {
+    background-color: #f2f2f2;
 }
 
+.caliphaze {
+    background-color: #d8d8d8;
+}
 #footer {
     position: absolute;
     width: 140px;
