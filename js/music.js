@@ -196,25 +196,25 @@ function play(track) {
                     pauseBtns(5);
                     trackArtist.textContent = "JAMLancaster";
                     trackTitle.textContent = "Quiet Dawn";
-                    albumArt.style.backgroundImage = "url(../img/hurricane.jpg)";
+                    albumArt.style.backgroundImage = "url(../img/JAMLancaster_album.png)";
                     break;
                 case 6:
                     pauseBtns(6);
                     trackArtist.textContent = "JAMLancaster";
                     trackTitle.textContent = "Start of Dawn";
-                    albumArt.style.backgroundImage = "url(../img/hurricane.jpg)";
+                    albumArt.style.backgroundImage = "url(../img/JAMLancaster_album.png)";
                     break;
                 case 7:
                     pauseBtns(7);
                     trackArtist.textContent = "JAMLancaster";
                     trackTitle.textContent = "Freeride";
-                    albumArt.style.backgroundImage = "url(../img/hurricane.jpg)";
+                    albumArt.style.backgroundImage = "url(../img/JAMLancaster_album.png)";
                     break;
                 case 8:
                     pauseBtns(8);
                     trackArtist.textContent = "Caliphaze";
                     trackTitle.textContent= "Ride Electric";
-                    albumArt.style.backgroundImage = "url(../img/hurricane.jpg)";
+                    albumArt.style.backgroundImage = "url(../img/Caliphaze_album.png)";
                     break;
             }
         } else { // pause music
