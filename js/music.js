@@ -148,7 +148,10 @@ function timeUpdate() {
 function play(track) {
     if (music.src=="" && track=="0") {
     } else {
-
+        document.getElementById("track-title-block").style.opacity = 1;
+        document.getElementById("track-artist-block").style.opacity = 1;
+        document.getElementById("track-duration-block").style.opacity = 1;
+        
         if (track !=0) {
             source = "music/" + track + ".mp3";
             if (music.src.indexOf(source) == -1) music.src = source;

@@ -3,6 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>autumnary</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="stylesheets/bootstrap-custom.css">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="stylesheets/catalog2.css">
@@ -14,8 +17,8 @@
     <body>
         <section id="header" class="container-fluid">
             <div class="row">
-                <h1 class="logo">AUTUMNARY</h1>
-                <h1 class="logosub">music</h1>
+                <p class="logo">AUTUMNARY</p>
+                <p class="logosub">music</p>
                 <div class="sub row"></div>
                 <img src="img/MenuIcon.svg" alt="menu" id="doublebar">
                 <img src="img/beautifully-crafted.svg" alt="beautifully crafted" class="bcraft">
@@ -38,12 +41,13 @@
         </div><!-- /morphsearch -->
         
         <div class="container catalog-title">
-            <h1 class="catalog-title-text">RACING |DRIVING CATALOG</h1>
+            <p class="catalog-title-text">RACING |DRIVING CATALOG</p>
         </div>
         
         <section class="container-fluid" id="album-art">
             <div id="track-artist-block"><p id="track-artist"></p></div>
             <div id="track-title-block"><p id="track-title"></p></div>
+            <div id="track-duration-block"><p id="timetext"></p></div>
         </section>
         
         <section class="container-fluid divider-bar">
@@ -58,7 +62,6 @@
                 <canvas id="analyser_render" height="89" width="2560"></canvas>
 				<div id="playhead"></div>
             </div>
-            <p id="timetext"></p>
         </div>
         
         <p class="icons-row">
@@ -89,7 +92,7 @@
                         <td class="no-border-left center">4:09</td>
                         <td>Driving, Racing, Electronic, Synth</td>
                         <td class="center">
-                            <a href="final-review.html"><i class="fa fa-plus"></i></a>
+                            <button type="button" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i></button>
                         </td>
                     </tr>
                     <tr class="clickable group-1" onclick="play(2)">
@@ -141,7 +144,7 @@
                         <td class="center"><i class="fa fa-plus"></i></td>
                     </tr>
                     <tr class="clickable color-3" onclick="play(8)">
-                        <td>Caliphaze</td>
+                        <td class="caliphaze">Caliphaze</td>
                         <td class="center no-border-right"><button id="btn8" class="play"></button></td>
                         <td class="no-side-borders">Ride Electric</td>
                         <td class="no-border-left center">3:34</td>
@@ -151,6 +154,26 @@
                 </tbody>
             </table>
        </section>
+        
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+            </div>
+        </div>
         
         <br><br><br><br><br><br>
         <div id="footer"></div>

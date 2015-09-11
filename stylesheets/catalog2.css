@@ -116,7 +116,7 @@
     background-size: cover;
 }
 
-#track-artist-block, #track-title-block {
+#track-artist-block, #track-title-block, #track-duration-block {
     position: absolute;
     background: rgba(74, 73, 74, 0.7);
     width: 247px;
@@ -125,6 +125,7 @@
     top:28px;
     left: 0px;
     text-align: center;
+    opacity: 0;
 }
 
 #track-title-block {
@@ -139,6 +140,24 @@
     font-size: 24px;
     color: white;
     margin-top: 12px;
+}
+
+#track-duration-block {
+    left: auto;
+    right: 0px;
+    height: 50px;
+}
+
+#timetext {
+    position: absolute;
+    font-family: 'Century Gothic', 'Century Gothic Bold';
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    top: 7px;
+    text-align: center;
+    color: white;
 }
 
 #track-title {
@@ -227,25 +246,15 @@
 }
 
 #playhead {
-    width: 10px;
+    width: 0px;
     height: 91px;
     margin-top: -90px;
-    background: rgba(0, 0, 0, 0);
+    background: grey;
+    border-color: grey;
 }
 
 .hidden {
     opacity: 0;
-}
-
-#timetext {
-    position: absolute;
-    font-family: 'Century Gothic', 'Century Gothic Bold';
-    font-size: 24px;
-    width: 117px;
-    text-align: center;
-    right: 37px;
-    margin: 0px;
-    top: 28px;
 }
 
 #progress {

@@ -12,7 +12,7 @@ body {
 	min-height: 40px;
 	background: #f1f1f1;
 	position: absolute;
-	z-index: 10000;
+	z-index: 0;
 	top: 165px;
 	right: 72px;
     border-style: solid;
@@ -33,6 +33,7 @@ body {
 	min-height: 100%;
 	top: 0px;
 	right: 0px;
+    z-index: 10000;
 }
 
 .morphsearch-form {
