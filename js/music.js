@@ -51,7 +51,7 @@ function initMp3Player() {
 function frameLooper(){
     window.RequestAnimationFrame = window.requestAnimationFrame(frameLooper) || window.mozRequestAnimationFrame(frameLooper) ||
                               window.webkitRequestAnimationFrame(frameLooper) || window.msRequestAnimationFrame(frameLooper);
-    canvas.width = window.innerWidth - 258;
+    canvas.width = timeline.offsetWidth;
 	fbc_array = new Uint8Array(analyser.frequencyBinCount);
 	analyser.getByteFrequencyData(fbc_array);
 	ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
