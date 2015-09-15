@@ -354,3 +354,23 @@ td {
     background-color: #d8d8d8;
     border-radius: 5px;
 }
+
+.confirm-button {
+    background: none;
+    border: none;
+}
+
+.modal-content {
+    position: relative;
+    width:  771px;
+    height:  368px;
+    border-radius: 8px;
+    background-image: url('../img/confirmation%20modal.png');
+}
+
+.modal-confirm {
+    position: absolute;
+    bottom: 0px;
+    height: 71.8px;
+    width: 100%;
+}
