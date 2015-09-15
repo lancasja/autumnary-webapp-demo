@@ -360,11 +360,17 @@ td {
     border: none;
 }
 
-.modal-content {
-    position: relative;
-    width:  771px;
+.modal-dialog {
+    width:  772px;
     height:  368px;
     border-radius: 8px;
+}
+.modal-content {
+    position: relative;
+    width:  772px;
+    height:  368px;
+    border-radius: 8px;
+    background-position: right;
     background-image: url('../img/confirmation%20modal.png');
 }
 
